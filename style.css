@@ -1,0 +1,26 @@
+body {
+ background-color: rgb(231, 231, 231);
+}
+/* .navbar{
+
+} */
+.categoryImg {
+    border-radius: 30px;
+}
+
+.rounded{
+    padding: 50px;
+    height: 600px;
+    width: 800px;
+
+}
+
+.card-body{
+    height: 70px;
+
+}
+
+.container {
+    margin-top: 60px;
+
+}

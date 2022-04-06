@@ -1,0 +1,23 @@
+setInterval every 30 seconds for player to answer between question
+
+create a StartGame function that will run set interval
+
+set if conditionals for answers and wrong answers
+
+create proper variables to have structured more readable code 
+
+
+add functionallity to the answer buttons and add background colors when clicked
+red for wrong green for right
+
+for the set interval set innerHtml to have a counter on the code
+
+use bootstrap for the structure of the page
+
+have a homepage.html 
+
+use fadeIn and fadeOut from Jquery to have the questions pop up on the cards 
+
+create navbar that will allow the user to go back to the homepage to play again or select another category 
+
+use dom methods addEventListener
