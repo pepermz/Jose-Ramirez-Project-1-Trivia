@@ -1,23 +1,34 @@
-setInterval every 30 seconds for player to answer between question
 
-create a StartGame function that will run set interval
+When the player opens the application
+    - Have a separate index.html for home screen
+    - Have the main title being clickable 
+    - Add an href to link to game.html
 
-set if conditionals for answers and wrong answers
+Then the main screen pops up   
+    - Have Jquery on the screen
+    - use fadeIn() for question to populate
+    - use fadeOut() after a question 
+    - use fadeIn() for answers to populate
+    - use Hover effect on right answer green
+    - use hover effect on wrong answer green
+    - start displaying the timer with setInterval of thirty seconds
 
-create proper variables to have structured more readable code 
+Use an askQuestion function 
+    - will take two arguments question and the value
+    - this function will have the set interval of 30 seconds
+    - after thirty seconds it will then switch to another question
+    - inside this function we will run through the arrays of questions 
+    - have array of answers and match the question with the right answer 
+
+Methods
+    - Create addEventListener to all the questions for the player to be able to choose an answer
+    - create variables for the buttons , the player 
+    - use innerHtml to populate the answers and questions with fade in and fade out 
+
+Categories
+    - Music
+    - Sports
+    - Entertainment
 
 
-add functionallity to the answer buttons and add background colors when clicked
-red for wrong green for right
 
-for the set interval set innerHtml to have a counter on the code
-
-use bootstrap for the structure of the page
-
-have a homepage.html 
-
-use fadeIn and fadeOut from Jquery to have the questions pop up on the cards 
-
-create navbar that will allow the user to go back to the homepage to play again or select another category 
-
-use dom methods addEventListener
