@@ -54,7 +54,7 @@ function questions(){
         optionC.innerHTML=sports[i].optionC
         optionD.innerHTML=sports[i].optionD
         if(sports[0].optionA===true){
-            console.log("Right Answer")
+            
 
         }
     }
