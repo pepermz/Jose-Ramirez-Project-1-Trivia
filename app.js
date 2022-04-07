@@ -54,64 +54,88 @@ const sports = [
         answer: optionB,
     },
     {
-        questionCard:"hiohd",
-        optionA: "eth",
-        optionB: "tyj",
-        optionC: "uyyjtt",
-        optionD: "ilu",
+        questionCard:"What is the national sport of Canada",
+        optionA: "Soccer",
+        optionB: "Tennis",
+        optionC: "Lacrosse",
+        optionD: "Hockey",
         answer: optionC
     },
     {
-        questionCard:"hiohd",
-        optionA: "tyje",
-        optionB: "ytje",
-        optionC: "adgr",
-        optionD: "adfga",
+        questionCard:"How many dimples does an average golf ball have?",
+        optionA: "336",
+        optionB: "1423",
+        optionC: "3244",
+        optionD: "653",
         answer: optionA
     },
     {
-        questionCard:"hiohd",
-        optionA: "4576",
-        optionB: "6864",
-        optionC: "764",
-        optionD: "8856",
+        questionCard:"The Olympics are held every how many years?",
+        optionA: "5 years",
+        optionB: "10 years",
+        optionC: "8 years",
+        optionD: "4 years",
         answer: optionD,
     },
     {
-        questionCard:"hiohd",
-        optionA: "5647675",
-        optionB: "66655",
-        optionC: "34656",
-        optionD: "2576",
+        questionCard:"What does NBA stand for?",
+        optionA: "National Basketball Association",
+        optionB: "Not a Basketball Association",
+        optionC: "National Ball of America",
+        optionD: "National Bank of America",
         answer: optionA,
     },
 ]
+
+function removeContent() {
+    questionCard.innerHTML=""
+    optionA.innerHTML=""
+    optionB.innerHTML=""
+    optionC.innerHTML=""
+    optionD.innerHTML=""
+}
+
+function addContent(){
+    questionCard.innerHTML=sports[i].questionCard
+    optionA.innerHTML=sports[i].optionA
+    optionB.innerHTML=sports[i].optionB
+    optionC.innerHTML=sports[i].optionC
+    optionD.innerHTML=sports[i].optionD  
+}
+
 
 // function to iterate beween questions
 let score = 0
 let i = 0 
 function questions(){
-        questionCard.innerHTML=sports[i].questionCard
-        optionA.innerHTML=sports[i].optionA
-        optionB.innerHTML=sports[i].optionB
-        optionC.innerHTML=sports[i].optionC
-        optionD.innerHTML=sports[i].optionD   
+        addContent()
         if(sports[i].answer.addEventListener('click',()=>{
             console.log(sports[i].answer)
             score ++ 
             sports[i].answer.classList.add('bg-success')
             console.log(score)
             console.log('Correct!')
+            removeContent()
+            addContent()
             i++ 
             console.log(sports[i])
         }))    
             
-        
-    // i++ 
     console.log(i)
 }
 
 questions()
+
+
+
+
+
+
+
+
+
+
+
 
 
 
