@@ -3,6 +3,7 @@ let optionB = document.querySelector('#optionB')
 let optionC = document.querySelector('#optionC')
 let optionD = document.querySelector('#optionD')
 let questionCard = document.querySelector('#question')
+let nextBtn = document.querySelector('#nextBtn')
 let score = 0
 let i = 0
 // let i = 0
@@ -86,11 +87,15 @@ const sports = [
 
 
 function removeContent() {
-    questionCard.innerHTML=""
-    optionA.innerHTML=""
-    optionB.innerHTML=""
-    optionC.innerHTML=""
-    optionD.innerHTML=""
+    if(optionA === optionA.classList.add('bg-success')){
+        optionA.classList.add('bg-primary')
+    } else if (optionB === optionB.classList.add('bg-success')){
+        optionB.classList.add('bg-primary')
+    } else if (optionC === optionC.classList.add('bg-success')){
+        optionC.classList.add('bg-pimary')
+    } else if (optionD === optionD.classList.add('bg-success')){
+        optionD.classList.add('bg-primary')
+    }
 //sports[i].answer.classList.remove('bg-success')
 }
 
@@ -102,102 +107,101 @@ function addContent(){
     optionD.innerHTML=sports[i].optionD
 }
 
-
-// function to iterate beween questions
-// function questions(){
-    // addContent()
-//     if(sports[i].answer.addEventListener('click',()=>{
-//         console.log(sports[i].answer)   
-//         score ++ 
-//         // sports[i].answer.classList.add('bg-success')
-//         console.log(score)
-//         console.log('Correct!')
-//         sports[i].answer = null
-//         removeContent()
-//         addContent()
-//         i++ 
-//         // i++ 
-//         console.log(sports[i])
-//     }))  
-
-// console.log(i)
-// }
-
-// questions()
-
-
-
+nextBtn.addEventListener('click',()=>{
+   if(i<sports.length){
+    i++;
+    questions()
+   }
+    
+})
 
 
 // function to iterate beween questions
  function questions(){
     addContent()
         optionA.addEventListener('click',(e)=> {
-            if (e.target.innerText === sports[i].answer) {
+            if (e.target.innerHTML === sports[i].answer) {
+                console.log(e.target.innerHTML)
+                console.log(sports[i].answer)
                 console.log("correct")
-                score ++
-                // sports[i].answer.classList.add('bg-success')
+                score += 1
+                optionA.classList.add('bg-success')
             } else {
                 console.log("incorrect")
-                score --
+                console.log(e.target.innerHTML)
+                console.log(sports[i].answer)
+                optionA.classList.remove('bg-success')
+                optionA.classList.add('bg-danger')
+                score -= 1
                 // sports[i].answer.classList.add('bg-primary')
             }
             removeContent()
-            addContent()
-            i++
+            // addContent()
             console.log(score)
         })
        
         optionB.addEventListener('click',(e)=> {
             if (e.target.innerText === sports[i].answer) {
+                console.log(e.target.innerHTML)
+                console.log(sports[i].answer)
                 console.log("correct")
-                score ++
+                optionB.classList.add('bg-success')
+                score += 1
                 // sports[i].answer.classList.add('bg-success')
-            } else {
+            } else  {
                 console.log("incoreect")
-                score --
+                console.log(e.target.innerHTML)
+                console.log(sports[i].answer)
+                optionB.classList.add('bg-danger')
+                score -= 1
                 // sports[i].answer.classList.add('bg-primary')
             }
             removeContent()
-            addContent()
-            i++
+            // addContent()
             console.log(score)
         })
        
         optionC.addEventListener('click',(e)=> {
             if (e.target.innerText === sports[i].answer) {
                 console.log("correct")
-                score ++
+                console.log(e.target.innerHTML)
+                console.log(sports[i].answer)
+                optionC.classList.add('bg-success')
+                score += 1
                 // sports[i].answer.classList.add('bg-success')
             } else {
                 console.log('incorrect')
-                score --
+                console.log(e.target.innerHTML)
+                console.log(sports[i].answer)
+                optionC.classList.add('bg-danger')
+                score -= 1
                 // sports[i].answer.classList.add('bg-primary')
             }
             removeContent()
-            addContent()
-            i++
+            // addContent()
             console.log(score)
         })
        
         optionD.addEventListener('click',(e)=> {
             if (e.target.innerText === sports[i].answer) {
                 console.log("correct")
-                score++
+                console.log(e.target.innerHTML)
+                console.log(sports[i].answer)
+                optionD.classList.add('bg-success')
+                score+= 1
                 // sports[i].optionD.classList.add('bg-success')
             } else {
                 console.log("incorrect")
-                score --
+                console.log(e.target.innerHTML)
+                console.log(sports[i].answer)
+                optionD.classList.add('bg-danger')
+                score -= 1
                 // sports[i].optionD.classList.add('bg-primary')
             }
             removeContent()
-            addContent()
-            i++
+            // addContent()
             console.log(score)
         })
-   
-        // console.log(sports[i])
- 
  }
 
  questions()

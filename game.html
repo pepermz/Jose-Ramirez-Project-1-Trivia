@@ -12,13 +12,35 @@
     <title>Trivia-Trivia</title>
 </head>
 <body>
+    
     <nav class="navbar navbar-light bg-dark" id="navbar"> 
         <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">
+          <a class="navbar-brand" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
             <img src="./assets/Logo Home.png" alt="" width="40" height="34" class="d-inline-block align-text-top">        
           </a>
         </div>
-      </nav>
+    </nav>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Trivia.</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Please select a different category from the dropdown menu below or click the home button
+        </div>
+        <div class="dropdown mt-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+            Menu
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="./index.html">Home</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
       <div class="text-center">
         <img src="https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="categoryImg" class="rounded" alt="...">
       </div>
@@ -32,19 +54,21 @@
           </div>
         <div class="row g-2">
           <div class="col-6">
-            <div class="p-3 border text-light bg-secondary" id="optionA">Option A</div>
+            <div class="p-3 border text-light bg-secondary" id="optionA"></div>
           </div>
           <div class="col-6">
-            <div class="p-3 border text-light bg-secondary" id="optionB">Option B</div>
+            <div class="p-3 border text-light bg-secondary" id="optionB"></div>
           </div>
           <div class="col-6">
-            <div class="p-3 border text-light bg-secondary" id="optionC">Option C</div>
+            <div class="p-3 border text-light bg-secondary" id="optionC"></div>
           </div>
           <div class="col-6">
-            <div class="p-3 border text-light bg-secondary" id="optionD">Option D</div>
+            <div class="p-3 border text-light bg-secondary" id="optionD"></div>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end" id="nextBtn">
+            <button class="btn btn-primary" type="button">Next</button>
           </div>
         </div>
       </div>
-
 </body>
 </html>
