@@ -5,20 +5,19 @@ let optionD = document.querySelector('#optionD')
 let questionCard = document.querySelector('#question')
 let score = 0
 let i = 0
+// let i = 0
 // checking functionallity on buttons
 
+optionA.addEventListener('click',(e)=>{
 
-optionA.addEventListener('click', ()=>{
-    
 })
-optionB.addEventListener('click', ()=>{
-  
-})
-optionC.addEventListener('click', ()=>{
-    
-})
+optionB.addEventListener('click',(e)=>{
 
-optionD.addEventListener('click',()=>{
+})
+optionC.addEventListener('click',(e)=>{
+
+})
+optionD.addEventListener('click',(e)=>{
 
 })
 
@@ -31,7 +30,7 @@ const sports = [
         optionB: "Germany",
         optionC: "Mexico",
         optionD: "Brazil",
-        answer: optionA,
+        answer: "France",
     },
     
     {
@@ -40,7 +39,7 @@ const sports = [
         optionB: "Russia",
         optionC: "United States",
         optionD: "Argentina",
-        answer: optionD,
+        answer: "Argentina",
     },
     {
         questionCard:"What year did London hosted the Olympics",
@@ -48,7 +47,7 @@ const sports = [
         optionB: "2012",
         optionC: "2020",
         optionD: "2001",
-        answer: optionB,
+        answer: "2012",
     },
     {
         questionCard:"What is the national sport of Canada",
@@ -56,7 +55,7 @@ const sports = [
         optionB: "Tennis",
         optionC: "Lacrosse",
         optionD: "Hockey",
-        answer: optionC,
+        answer: "Lacrosse",
     },
     {
         questionCard:"How many dimples does an average golf ball have?",
@@ -64,7 +63,7 @@ const sports = [
         optionB: "1423",
         optionC: "3244",
         optionD: "653",
-        answer: optionA,
+        answer: "336",
     },
     {
         questionCard:"The Olympics are held every how many years?",
@@ -72,7 +71,7 @@ const sports = [
         optionB: "10 years",
         optionC: "8 years",
         optionD: "4 years",
-        answer: optionD,
+        answer: "4 years",
     },
     {
         questionCard:"What does NBA stand for?",
@@ -80,7 +79,7 @@ const sports = [
         optionB: "Not a Basketball Association",
         optionC: "National Ball of America",
         optionD: "National Bank of America",
-        answer: optionA,
+        answer: "National Basketball Association",
     },
 ]
 
@@ -92,7 +91,7 @@ function removeContent() {
     optionB.innerHTML=""
     optionC.innerHTML=""
     optionD.innerHTML=""
-    // sports[i].answer.classList.remove('bg-success')
+//sports[i].answer.classList.remove('bg-success')
 }
 
 function addContent(){
@@ -105,30 +104,103 @@ function addContent(){
 
 
 // function to iterate beween questions
-function questions(){
+// function questions(){
+    // addContent()
+//     if(sports[i].answer.addEventListener('click',()=>{
+//         console.log(sports[i].answer)   
+//         score ++ 
+//         // sports[i].answer.classList.add('bg-success')
+//         console.log(score)
+//         console.log('Correct!')
+//         sports[i].answer = null
+//         removeContent()
+//         addContent()
+//         i++ 
+//         // i++ 
+//         console.log(sports[i])
+//     }))  
+
+// console.log(i)
+// }
+
+// questions()
+
+
+
+
+
+// function to iterate beween questions
+ function questions(){
     addContent()
-    if(sports[i].answer.addEventListener('click',()=>{
-        console.log(sports[i].answer)   
-        score ++ 
-        sports[i].answer.classList.add('bg-success')
-        console.log(score)
-        console.log('Correct!')
-        sports[i].answer = null
-        removeContent()
-        addContent()
-        i++ 
-        console.log(sports[i])
-    }))  
+        optionA.addEventListener('click',(e)=> {
+            if (e.target.innerText === sports[i].answer) {
+                console.log("correct")
+                score ++
+                // sports[i].answer.classList.add('bg-success')
+            } else {
+                console.log("incorrect")
+                score --
+                // sports[i].answer.classList.add('bg-primary')
+            }
+            removeContent()
+            addContent()
+            i++
+            console.log(score)
+        })
+       
+        optionB.addEventListener('click',(e)=> {
+            if (e.target.innerText === sports[i].answer) {
+                console.log("correct")
+                score ++
+                // sports[i].answer.classList.add('bg-success')
+            } else {
+                console.log("incoreect")
+                score --
+                // sports[i].answer.classList.add('bg-primary')
+            }
+            removeContent()
+            addContent()
+            i++
+            console.log(score)
+        })
+       
+        optionC.addEventListener('click',(e)=> {
+            if (e.target.innerText === sports[i].answer) {
+                console.log("correct")
+                score ++
+                // sports[i].answer.classList.add('bg-success')
+            } else {
+                console.log('incorrect')
+                score --
+                // sports[i].answer.classList.add('bg-primary')
+            }
+            removeContent()
+            addContent()
+            i++
+            console.log(score)
+        })
+       
+        optionD.addEventListener('click',(e)=> {
+            if (e.target.innerText === sports[i].answer) {
+                console.log("correct")
+                score++
+                // sports[i].optionD.classList.add('bg-success')
+            } else {
+                console.log("incorrect")
+                score --
+                // sports[i].optionD.classList.add('bg-primary')
+            }
+            removeContent()
+            addContent()
+            i++
+            console.log(score)
+        })
+   
+        // console.log(sports[i])
+ 
+ }
 
-console.log(i)
-}
-
-questions()
-
-
-// setInterval(() => {
-//     questions()
-// }, 5000);
+ questions()
 
 
 
@@ -174,10 +246,7 @@ questions()
 
 
 
-
-
-
-
+// THIS FUNCTION MIGHT WORK
 
 
 // function questions(){
