@@ -8,6 +8,7 @@ let total = document.querySelector('#totalBtn')
 let score = 0
 let i = 0
 
+// Array of Questions 
 
 const sports = [
     // 0 
@@ -93,6 +94,8 @@ function removeContent() {
     }
 }
 
+// This function will add content to the divs 
+
 function addContent(){
     questionCard.innerHTML=sports[i].questionCard
     optionA.innerHTML=sports[i].optionA
@@ -101,11 +104,19 @@ function addContent(){
     optionD.innerHTML=sports[i].optionD
 }
 
+// Adding event listener to next button 
+
 nextBtn.addEventListener('click',()=>{
    if(i<sports.length){
     i++;
     questions()
     removeContent()
+   } else {
+       if(i>=sports.length && score>=10){
+       alert(`${total.innerText} Congratulations! You have completed this category`)
+       } else {
+           alert(`${total.innerText} So bad! give it another shot!`)
+       }
    }
     
 })
