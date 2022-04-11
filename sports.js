@@ -106,20 +106,23 @@ function addContent(){
 
 // Adding event listener to next button 
 
-nextBtn.addEventListener('click',()=>{
-   if(i<sports.length){
-    i++;
-    questions()
-    removeContent()
-   } else {
-       if(i>=sports.length && score>=10){
-       alert(`${total.innerText} Congratulations! You have completed this category`)
-       } else {
-           alert(`${total.innerText} So bad! give it another shot!`)
-       }
-   }
-    
-})
+    nextBtn.addEventListener('click',()=>{
+    if(i<sports.length){
+        i++;
+        questions()
+        removeContent()
+    } else {
+        if(i>=sports.length && score>=10){
+        alert(`${total.innerText} Congratulations! You have completed this category`)
+        } else {
+            alert(`${total.innerText} So bad! give it another shot!`)
+        }
+    }
+        
+    })
+
+
+
 
 // This function displays the total score
 

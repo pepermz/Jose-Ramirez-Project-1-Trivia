@@ -7,6 +7,7 @@ let nextBtn = document.querySelector('#nextBtn')
 let total = document.querySelector('#totalBtn')
 let score = 0
 let i = 0
+let img = document.getElementById('image')
 
 // Array of Questions 
 
@@ -19,6 +20,7 @@ const sports = [
         optionC: "Brian May",
         optionD: "Fred Michaels",
         answer: "Farrokh Bulsara",
+        url: "https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     
     {
@@ -28,6 +30,7 @@ const sports = [
         optionC: "Barry White",
         optionD: "Berry Gordy",
         answer: "Berry Gordy",
+        url: "https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
         questionCard:"Paul McCartney and John Lennon wrote which Rolling Stones song?",
@@ -70,7 +73,7 @@ const sports = [
         answer: "1969",
     },
 ]
-
+console.log(sports[0].url)
 // This function removes the content including the styiling 
 
 function removeContent() {
@@ -104,6 +107,10 @@ function addContent(){
     optionD.innerHTML=sports[i].optionD
 }
 
+
+function addImg(){
+    img.src=sports[i].url
+}
 // Adding event listener to next button 
 
 nextBtn.addEventListener('click',()=>{
@@ -148,7 +155,7 @@ function displayTotal (){
             }
             console.log(score)
         })
-        addContent() 
+        // addContent() 
         optionB.addEventListener('click',(e)=> {
             if (e.target.innerText === sports[i].answer) {
                 console.log(e.target.innerHTML)
@@ -200,6 +207,7 @@ function displayTotal (){
             console.log(score)
         })
     displayTotal()
+
  }
 
 
