@@ -123,9 +123,11 @@ nextBtn.addEventListener('click',()=>{
 
 // This function displays the total score
 
+
 function displayTotal (){
     total.innerText = `Total Score: ${score}`
 }
+
 
 // function to iterate beween questions with a manual loop ( Thanks brian for the idea! )
 
