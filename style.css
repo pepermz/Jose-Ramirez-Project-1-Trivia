@@ -36,8 +36,17 @@ body {
 #optionD {
     cursor: pointer;
 } 
-
-
+footer{
+    text-align: center;
+    padding: 3px;
+    background-color: aliceblue;
+}
+#github{
+    height: 30px;
+    width: 30px;
+    margin-left: 50%;
+    cursor: pointer;
+}
 /* .container {
     margin-top: 60px;
 
