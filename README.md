@@ -7,7 +7,6 @@ For this project I will be creating a fun trivia game that allows the user to an
 For this project I intend to use mostly Javascript, HTML, CSS and implement Bootstrap as a framework for CSS
 
 
-### Template for Game
-<img width="1603" alt="Screen Shot 2022-04-06 at 9 40 30 AM" src="https://user-images.githubusercontent.com/74684215/162005384-27c96bb5-b21d-43a3-8591-dbaa48911769.png">
+### Screenshot of running application
 
-
+<img width="840" alt="Screen Shot 2022-04-12 at 8 02 13 AM" src="https://user-images.githubusercontent.com/74684215/162968591-d40ecf86-6898-41ac-8d75-3eec80d40b49.png">
