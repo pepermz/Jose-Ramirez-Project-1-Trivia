@@ -34,10 +34,10 @@ const sports = [
     },
     {
         questionCard:"Paul McCartney and John Lennon wrote which Rolling Stones song?",
-        optionA: "I Cant Get No (satisfaction)",
+        optionA: "Satisfaction",
         optionB: "I Wanna Be Your Man",
         optionC: "Paint it Black",
-        optionD: "Sympathy for the Devil",
+        optionD: "Let it Be",
         answer: "I Wanna Be Your Man",
         url: "https://images.pexels.com/photos/1181769/pexels-photo-1181769.jpeg",
     },
