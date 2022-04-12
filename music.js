@@ -39,6 +39,7 @@ const sports = [
         optionC: "Paint it Black",
         optionD: "Sympathy for the Devil",
         answer: "I Wanna Be Your Man",
+        url: "https://images.pexels.com/photos/1181769/pexels-photo-1181769.jpeg",
     },
     {
         questionCard:"Who was the first woman ever inducted into the Rock and Roll Hall of Fame?",
@@ -47,6 +48,7 @@ const sports = [
         optionC: "Aretha Franklin",
         optionD: "Britney Spears",
         answer: "Aretha Franklin",
+        url:"https://images.pexels.com/photos/417451/pexels-photo-417451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
         questionCard:"What was Elvis Presley's first No.1 hit in the United States?",
@@ -55,6 +57,7 @@ const sports = [
         optionC: "I Cant Help Falling in Love",
         optionD: "Hound Dog",
         answer: "Heartbreak Hotel",
+        url:"https://images.pexels.com/photos/2253569/pexels-photo-2253569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
         questionCard:"Which classical composer was deaf?",
@@ -63,6 +66,7 @@ const sports = [
         optionC: "Frederic Chopin",
         optionD: "Claude Debussy",
         answer: "Ludwig van Beethoven",
+        url:"https://images.pexels.com/photos/2528455/pexels-photo-2528455.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
         questionCard:"What year was Woodstock held in?",
@@ -71,9 +75,10 @@ const sports = [
         optionC: "Today",
         optionD: "1969",
         answer: "1969",
+        url:"https://images.pexels.com/photos/1587927/pexels-photo-1587927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
 ]
-console.log(sports[0].url)
+// console.log(sports[0].url)
 // This function removes the content including the styiling 
 
 function removeContent() {

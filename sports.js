@@ -7,6 +7,7 @@ let nextBtn = document.querySelector('#nextBtn')
 let total = document.querySelector('#totalBtn')
 let score = 0
 let i = 0
+const testImg = document.getElementById('categoryImg')
 
 // Array of Questions 
 
@@ -19,6 +20,7 @@ const sports = [
         optionC: "Mexico",
         optionD: "Brazil",
         answer: "France",
+        url:"https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg",
     },
     
     {
@@ -28,6 +30,7 @@ const sports = [
         optionC: "United States",
         optionD: "Argentina",
         answer: "Argentina",
+        url:"https://images.pexels.com/photos/270085/pexels-photo-270085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
         questionCard:"What year did London hosted the Olympics",
@@ -36,6 +39,7 @@ const sports = [
         optionC: "2020",
         optionD: "2001",
         answer: "2012",
+        url:"https://images.pexels.com/photos/236937/pexels-photo-236937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
         questionCard:"What is the national sport of Canada",
@@ -44,6 +48,7 @@ const sports = [
         optionC: "Lacrosse",
         optionD: "Hockey",
         answer: "Lacrosse",
+        url:"https://images.pexels.com/photos/209977/pexels-photo-209977.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
         questionCard:"How many dimples does an average golf ball have?",
@@ -52,6 +57,7 @@ const sports = [
         optionC: "3244",
         optionD: "653",
         answer: "336",
+        url:"https://images.pexels.com/photos/2828723/pexels-photo-2828723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
         questionCard:"The Olympics are held every how many years?",
@@ -60,6 +66,7 @@ const sports = [
         optionC: "8 years",
         optionD: "4 years",
         answer: "4 years",
+        url:"https://images.pexels.com/photos/720456/pexels-photo-720456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
     {
         questionCard:"What does NBA stand for?",
@@ -68,6 +75,7 @@ const sports = [
         optionC: "National Ball of America",
         optionD: "National Bank of America",
         answer: "National Basketball Association",
+        url:"https://images.pexels.com/photos/5586401/pexels-photo-5586401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
 ]
 
@@ -104,6 +112,12 @@ function addContent(){
     optionD.innerHTML=sports[i].optionD
 }
 
+// this function adds images to questions 
+function addImg(){
+    testImg.src=sports[i].url
+    console.log(img)
+}
+
 // Adding event listener to next button 
 
     nextBtn.addEventListener('click',()=>{
@@ -111,6 +125,7 @@ function addContent(){
         i++;
         questions()
         removeContent()
+        addImg()
     } else {
         if(i>=sports.length && score>=10){
         alert(`${total.innerText} Congratulations! You have completed this category`)
