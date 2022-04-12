@@ -1,9 +1,7 @@
 body {
  background-color: rgb(231, 231, 231);
 }
-/* .navbar{
 
-}  */
  .categoryImg {
     border-radius: 30px;
 }
@@ -19,11 +17,6 @@ body {
 .bg-success {
     background-color: green;
 }
-
- /* .card-body{
-    height: 70px;
-
-} */
 
  #optionA {
     cursor: pointer;
@@ -55,8 +48,11 @@ footer{
       height: 300px;
       width: 400px
     }
+    .footer{
+        display:none;
+    }
     footer{
-        visibility: hidden;
+        display: none;
     }
     .output{
         font-size: 10px;

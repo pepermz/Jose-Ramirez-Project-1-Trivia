@@ -13,7 +13,7 @@ let output = document.querySelector('.output')
 // Array of Questions 
 
 const sports = [
-    // 0 
+    
     {
         questionCard:"Who won the world cup 2018?",
         optionA: "France",

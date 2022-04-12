@@ -14,7 +14,7 @@ let output = document.querySelector('.output')
 // Array of Questions 
 
 const sports = [
-    // 0 
+    
     {
         questionCard:"What was Freddy Mercury's real name?",
         optionA: "Farrokh Bulsara",
@@ -80,7 +80,7 @@ const sports = [
         url:"https://images.pexels.com/photos/1587927/pexels-photo-1587927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     },
 ]
-// console.log(sports[0].url)
+
 // This function removes the content including the styiling 
 
 function removeContent() {
@@ -134,7 +134,7 @@ nextBtn.addEventListener('click',()=>{
    } else {
        if(i>=sports.length && score>=10){
        output.innerHTML=`Congratulations! You have completed this category`
-       
+
        } else {
         output.innerHTML=`So bad! give it another shot!`
        }
@@ -169,7 +169,6 @@ function displayTotal (){
             }
             console.log(score)
         })
-        // addContent() 
         optionB.addEventListener('click',(e)=> {
             if (e.target.innerText === sports[i].answer) {
                 console.log(e.target.innerHTML)
