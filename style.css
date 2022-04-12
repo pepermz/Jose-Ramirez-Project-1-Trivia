@@ -51,3 +51,12 @@ footer{
     margin-top: 60px;
 
 }    */ 
+@media only screen and (max-width: 600px) {
+    .rounded {
+      height: 300px;
+      width: 400px
+    }
+    footer{
+        visibility: hidden;
+    }
+  }
