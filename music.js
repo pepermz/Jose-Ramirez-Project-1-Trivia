@@ -7,7 +7,7 @@ let nextBtn = document.querySelector('#nextBtn')
 let total = document.querySelector('#totalBtn')
 let score = 0
 let i = 0
-let img = document.getElementById('image')
+const testImg = document.getElementById('categoryImg')
 
 // Array of Questions 
 
@@ -98,6 +98,7 @@ function removeContent() {
 }
 
 // This function will add content to the divs 
+console.log(testImg)
 
 function addContent(){
     questionCard.innerHTML=sports[i].questionCard
@@ -109,8 +110,10 @@ function addContent(){
 
 
 function addImg(){
-    img.src=sports[i].url
+    testImg.src=sports[i].url
+    console.log(img)
 }
+
 // Adding event listener to next button 
 
 nextBtn.addEventListener('click',()=>{
@@ -118,6 +121,7 @@ nextBtn.addEventListener('click',()=>{
     i++;
     questions()
     removeContent()
+    addImg()
    } else {
        if(i>=sports.length && score>=10){
        alert(`${total.innerText} Congratulations! You have completed this category`)

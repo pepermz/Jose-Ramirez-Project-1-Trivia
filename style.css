@@ -47,10 +47,7 @@ footer{
     margin-left: 50%;
     cursor: pointer;
 }
-/* .container {
-    margin-top: 60px;
 
-}    */ 
 @media only screen and (max-width: 600px) {
     .rounded {
       height: 300px;
