@@ -103,6 +103,7 @@ function removeContent() {
 }
 
 // This function will add content to the divs 
+
 console.log(testImg)
 
 function addContent(){
@@ -113,6 +114,7 @@ function addContent(){
     optionD.innerHTML=sports[i].optionD
 }
 
+// This function adds the image to the question
 
 function addImg(){
     testImg.src=sports[i].url
