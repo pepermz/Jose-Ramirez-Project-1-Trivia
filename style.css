@@ -7,7 +7,9 @@ body {
  .categoryImg {
     border-radius: 30px;
 }
-
+.output{
+    font-size: 20px;
+}
 .rounded{
     padding: 50px;
     height: 600px;
@@ -56,4 +58,10 @@ footer{
     footer{
         visibility: hidden;
     }
+    .output{
+        font-size: 10px;
+    }
   }
+
+
+    

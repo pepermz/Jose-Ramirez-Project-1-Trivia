@@ -8,6 +8,8 @@ let total = document.querySelector('#totalBtn')
 let score = 0
 let i = 0
 const testImg = document.getElementById('categoryImg')
+let output = document.querySelector('.output')
+
 
 // Array of Questions 
 
@@ -131,9 +133,10 @@ nextBtn.addEventListener('click',()=>{
     addImg()
    } else {
        if(i>=sports.length && score>=10){
-       alert(`${total.innerText} Congratulations! You have completed this category`)
+       output.innerHTML=`Congratulations! You have completed this category`
+       
        } else {
-           alert(`${total.innerText} So bad! give it another shot!`)
+        output.innerHTML=`So bad! give it another shot!`
        }
    }
     
