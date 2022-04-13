@@ -6,6 +6,11 @@ For this project I will be creating a fun trivia game that allows the user to an
 ### Technologies Used
 For this project I intend to use mostly Javascript, HTML, CSS and implement Bootstrap as a framework for CSS
 
+### Next Steps
+implement a timer as proposed on my original wireframe
+fix minor bug issues
+
+
 ### Deployment
 https://pepermz.github.io/Jose-Ramirez-Project-1-Trivia/
 
