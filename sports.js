@@ -116,7 +116,6 @@ function addContent(){
 // this function adds images to questions 
 function addImg(){
     testImg.src=sports[i].url
-    console.log(img)
 }
 
 // Adding event listener to next button 
@@ -154,70 +153,42 @@ function displayTotal (){
     addContent()
         optionA.addEventListener('click',(e)=> {
             if (e.target.innerHTML === sports[i].answer) {
-                console.log(e.target.innerHTML)
-                console.log(sports[i].answer)
-                console.log("correct")
                 score += 1
                 optionA.classList.add('bg-success')
             } else {
-                console.log("incorrect")
-                console.log(e.target.innerHTML)
-                console.log(sports[i].answer)
                 optionA.classList.add('bg-danger')
                 score -= 1
             }
-            console.log(score)
         })
         addContent() 
         optionB.addEventListener('click',(e)=> {
             if (e.target.innerText === sports[i].answer) {
-                console.log(e.target.innerHTML)
-                console.log(sports[i].answer)
-                console.log("correct")
                 optionB.classList.add('bg-success')
                 score += 1
             } else  {
-                console.log("incoreect")
-                console.log(e.target.innerHTML)
-                console.log(sports[i].answer)
                 optionB.classList.add('bg-danger')
                 score -= 1
             }
-            console.log(score)
         })
        
         optionC.addEventListener('click',(e)=> {
             if (e.target.innerText === sports[i].answer) {
-                console.log("correct")
-                console.log(e.target.innerHTML)
-                console.log(sports[i].answer)
                 optionC.classList.add('bg-success')
                 score += 1
             } else {
-                console.log('incorrect')
-                console.log(e.target.innerHTML)
-                console.log(sports[i].answer)
                 optionC.classList.add('bg-danger')
                 score -= 1
             }
-            console.log(score)
         })
        
         optionD.addEventListener('click',(e)=> {
             if (e.target.innerText === sports[i].answer) {
-                console.log("correct")
-                console.log(e.target.innerHTML)
-                console.log(sports[i].answer)
                 optionD.classList.add('bg-success')
                 score += 1
             } else {
-                console.log("incorrect")
-                console.log(e.target.innerHTML)
-                console.log(sports[i].answer)
                 optionD.classList.add('bg-danger')
                 score -= 1
             }
-            console.log(score)
         })
     displayTotal()
  }
