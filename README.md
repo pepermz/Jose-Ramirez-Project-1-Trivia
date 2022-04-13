@@ -1,7 +1,7 @@
 # Jose-Ramirez-Project-1-Trivia
 
 ## Project Idea
-For this project I will be creating a fun trivia game that allows the user to answer questions between a set amount of time, the player will have different categories to choose from and will have 30 seconds to answer each question before the time runs out and moves to another question. The game ends finally when the player answers three questions wrong.
+For this project I will be creating a fun trivia game that allows the user to answer questions between a set amount of time, the player will have different categories to choose from and will multiple answers to choose from before moving to another question. The game ends finally when the player answers all questions and gets a score greater than 10. Each question gets harder and each question is worth more points.After the player selects an answer the answer will highlight red or green if it is right or wrong. The part I struggled the most was iterating between the questions and making sure the right answer was highlited green and having images for each questions. I created an object with an array and iterated between the array. 
 
 ### Technologies Used
 For this project I intend to use mostly Javascript, HTML, CSS and implement Bootstrap as a framework for CSS
